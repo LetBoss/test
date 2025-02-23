@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Продажа клубники</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Верхняя навигационная панель -->
+  <nav class="top-nav">
+    <div class="top-nav-container">
+      <div class="brand">Tatyan Strawberry</div>
+      <div class="nav-buttons">
+        <a href="#" id="openModalAbout">О нас</a>
+        <a href="#" id="openModalHelp">Помощь</a>
+        <a href="#" id="openModalArticle1">Статья 1</a>
+        <a href="#" id="openModalArticle2">Статья 2</a>
+        <a href="#" id="openModalArticle3">Статья 3</a>
+      </div>
+    </div>
+  </nav>
+  
+  <header>
+    <h1>Продажа клубники</h1>
+    <p>Телефон: +7 (123) 456-78-90 | Email: info@klubnika.ru</p>
+  </header>
+  
+  <div class="container">
+    <h2>Наши сорта клубники</h2>
+    <div class="product-grid">
+      <!-- Карточка "Ремонтантый" -->
+      <div class="product-card special">
+        <img src="https://api13.iloveimg.com/v1/download/df502xxjcbvsnf79w83vq0y26jqh9wnv6klw7l9lpt2yydvncv2vl9jqf6r5xbydbzjjbz6fkgwg0gfwyys0fsn21bfbt94p98sr70mslnnnwht7g35q3tktyh5xl4qkjkxhhqA8xrc6m780j78g0gkgtpqmkw7yzj5kqcqhb0wfjzdAmcs1" alt="Клубника Ремонтантый">
+        <h3>Ремонтантый</h3>
+        <p>Сорт клубники с высокой урожайностью и длительным плодоношением. Идеально подходит для круглогодичного выращивания.</p>
+        <button class="btn" id="openModalRemontanty">Подробно</button>
+      </div>
+      <!-- Карточка "Разовый" -->
+      <div class="product-card special">
+        <img src="https://api13.iloveimg.com/v1/download/df502xxjcbvsnf79w83vq0y26jqh9wnv6klw7l9lpt2yydvncv2vl9jqf6r5xbydbzjjbz6fkgwg0gfwyys0fsn21bfbt94p98sr70mslnnnwht7g35q3tktyh5xl4qkjkxhhqA8xrc6m780j78g0gkgtpqmkw7yzj5kqcqhb0wfjzdAmcs1" alt="Клубника Разовый">
+        <h3>Разовый</h3>
+        <p>Сорт клубники с высокой урожайностью и длительным плодоношением. Идеально подходит для круглогодичного выращивания.</p>
+        <button class="btn" id="openModalRazovyy">Подробно</button>
+      </div>
+      <!-- Карточка "Новый сорт" -->
+      <div class="product-card special">
+        <img src="https://api13.iloveimg.com/v1/download/df502xxjcbvsnf79w83vq0y26jqh9wnv6klw7l9lpt2yydvncv2vl9jqf6r5xbydbzjjbz6fkgwg0gfwyys0fsn21bfbt94p98sr70mslnnnwht7g35q3tktyh5xl4qkjkxhhqA8xrc6m780j78g0gkgtpqmkw7yzj5kqcqhb0wfjzdAmcs1" alt="Клубника Новый сорт">
+        <h3>Новый сорт</h3>
+        <p>Описание нового сорта клубники.</p>
+        <button class="btn" id="openModalNew">Подробно</button>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Продажа клубники. Все права защищены.</p>
+  </footer>
+  
+  <!-- Модальные окна для сортов клубники (продукты) -->
+  <div id="modalRemontanty" class="modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalRemontanty">&times;</span>
+      <div class="modal-inner">
+        <div class="modal-text">
+          <h3>Ремонтантый — Подробное описание</h3>
+          <p>
+            Сорт "Ремонтантый" отличается высокой урожайностью, устойчивостью к неблагоприятным условиям и длительным периодом плодоношения. Его ягоды крупные, сочные, с насыщенным ароматом и прекрасным вкусом.
+          </p>
+        </div>
+        <div class="modal-image">
+          <img class="modal-img" src="https://api13.iloveimg.com/v1/download/df502xxjcbvsnf79w83vq0y26jqh9wnv6klw7l9lpt2yydvncv2vl9jqf6r5xbydbzjjbz6fkgwg0gfwyys0fsn21bfbt94p98sr70mslnnnwht7g35q3tktyh5xl4qkjkxhhqA8xrc6m780j78g0gkgtpqmkw7yzj5kqcqhb0wfjzdAmcs1" alt="Подробное изображение Ремонтантый">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalRazovyy" class="modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalRazovyy">&times;</span>
+      <div class="modal-inner">
+        <div class="modal-text">
+          <h3>Разовый — Подробное описание</h3>
+          <p>
+            Сорт "Разовый" обладает такими же характеристиками, как и "Ремонтантый": высокая урожайность, устойчивость к неблагоприятным погодным условиям и длительный период плодоношения. Ягоды отличаются ярким вкусом и ароматом.
+          </p>
+        </div>
+        <div class="modal-image">
+          <img class="modal-img" src="https://api13.iloveimg.com/v1/download/df502xxjcbvsnf79w83vq0y26jqh9wnv6klw7l9lpt2yydvncv2vl9jqf6r5xbydbzjjbz6fkgwg0gfwyys0fsn21bfbt94p98sr70mslnnnwht7g35q3tktyh5xl4qkjkxhhqA8xrc6m780j78g0gkgtpqmkw7yzj5kqcqhb0wfjzdAmcs1" alt="Подробное изображение Разовый">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalNew" class="modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalNew">&times;</span>
+      <div class="modal-inner">
+        <div class="modal-text">
+          <h3>Новый сорт — Подробное описание</h3>
+          <p>
+            Здесь подробное описание нового сорта клубники. Описание может включать особенности внешнего вида, вкусовые качества и условия выращивания.
+          </p>
+        </div>
+        <div class="modal-image">
+          <img class="modal-img" src="https://api13.iloveimg.com/v1/download/df502xxjcbvsnf79w83vq0y26jqh9wnv6klw7l9lpt2yydvncv2vl9jqf6r5xbydbzjjbz6fkgwg0gfwyys0fsn21bfbt94p98sr70mslnnnwht7g35q3tktyh5xl4qkjkxhhqA8xrc6m780j78g0gkgtpqmkw7yzj5kqcqhb0wfjzdAmcs1" alt="Подробное изображение Новый сорт">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Модальные окна для статей (упрощённое оформление без изображения) -->
+  <div id="modalAbout" class="modal article-modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalAbout">&times;</span>
+      <div class="modal-text article-text">
+        <h3>О нас</h3>
+        <p>
+          Здесь размещается информация о компании. Мы предлагаем свежую, высококачественную клубнику, выращенную с любовью и заботой о природе. Наша миссия – доставлять натуральные продукты прямо к вам.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalHelp" class="modal article-modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalHelp">&times;</span>
+      <div class="modal-text article-text">
+        <h3>Помощь</h3>
+        <p>
+          Здесь вы найдете ответы на часто задаваемые вопросы и инструкции по использованию нашего сайта. Наша команда всегда готова помочь вам.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalArticle1" class="modal article-modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalArticle1">&times;</span>
+      <div class="modal-text article-text">
+        <h3>Статья 1</h3>
+        <p>
+          Содержимое статьи 1. Здесь можно разместить полезную информацию, новости или советы, связанные с нашей продукцией.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalArticle2" class="modal article-modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalArticle2">&times;</span>
+      <div class="modal-text article-text">
+        <h3>Статья 2</h3>
+        <p>
+          Содержимое статьи 2. Здесь можно разместить дополнительную информацию, советы или обзоры, связанные с клубникой и её выращиванием.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modalArticle3" class="modal article-modal">
+    <div class="modal-content fullscreen">
+      <span class="close" data-modal="modalArticle3">&times;</span>
+      <div class="modal-text article-text">
+        <h3>Статья 3</h3>
+        <p>
+          Содержимое статьи 3. Здесь можно разместить информацию о новинках, специальных предложениях или актуальные новости.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Функция для открытия модального окна: добавляет класс "active"
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.add("active");
+    }
+    // Функция для закрытия модального окна: удаляет класс "active"
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove("active");
+    }
+    
+    // Привязка кнопок для продуктовых модалок
+    document.getElementById("openModalRemontanty").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalRemontanty");
+    });
+    document.getElementById("openModalRazovyy").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalRazovyy");
+    });
+    document.getElementById("openModalNew").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalNew");
+    });
+    
+    // Привязка кнопок верхней навигации для статей
+    document.getElementById("openModalAbout").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalAbout");
+    });
+    document.getElementById("openModalHelp").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalHelp");
+    });
+    document.getElementById("openModalArticle1").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalArticle1");
+    });
+    document.getElementById("openModalArticle2").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalArticle2");
+    });
+    document.getElementById("openModalArticle3").addEventListener("click", function(e) {
+      e.preventDefault();
+      openModal("modalArticle3");
+    });
+    
+    // Закрытие модальных окон при клике на элемент с классом "close"
+    document.querySelectorAll(".close").forEach(function(closeBtn) {
+      closeBtn.addEventListener("click", function() {
+        const modalId = this.getAttribute("data-modal");
+        closeModal(modalId);
+      });
+    });
+    
+    // Закрытие модального окна при клике вне области контента
+    window.addEventListener("click", function(event) {
+      document.querySelectorAll(".modal").forEach(function(modal) {
+        if (event.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
